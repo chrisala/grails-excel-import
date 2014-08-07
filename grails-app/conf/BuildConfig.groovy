@@ -31,6 +31,7 @@ grails.project.dependency.resolution = {
 		compile(group: 'org.apache.poi', name: 'poi-ooxml', version: '3.8') {
 			excludes 'xmlbeans'
 		}
+compile "joda-time:joda-time:2.3"
 		//compile group:'org.apache.poi', name:'poi-contrib', version:'3.7'
 		//compile group:'org.apache.poi', name:'poi-scratchpad', version:'3.7' //ppt, word, visio, outlook support
 	}
@@ -39,8 +40,5 @@ grails.project.dependency.resolution = {
 		build ":release:3.0.1"
 		build ":tomcat:7.0.53"
 
-		compile ':hibernate:3.6.10.15' {
-			export = false
-		}
 	}
 }
